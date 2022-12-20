@@ -6,7 +6,7 @@ function guessingGame() {
 
     return function checkGuess(guess){
         if(gameFinished) return "The game is over, you already won!"
-        else guessCount = guessCount + 1;
+        else guessCount += 1;
 
         if (guess > randNum) return `${guess} is too high!`;
         else if (guess < randNum) return `${guess} is too low!`;
